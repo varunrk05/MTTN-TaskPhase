@@ -1,0 +1,85 @@
+html{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+}
+
+.signup-login{
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.452);
+    height: 70%;
+    border-radius: 10px;
+}
+
+.signup-login .select-form{
+    padding: 0%;
+    margin: 5%;
+    width: 90%;
+    display: inline-block;
+}
+
+.signup-login .select-form span{
+    margin: auto;
+    display: block;
+    float: left;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: rgba(56, 56, 56, 0.699);
+    border: 2px solid rgba(157, 248, 255, 0.705);
+    border-radius: 2px;
+    width: 43%;
+    text-align: center;
+}
+
+.signup-login .select-form span:hover{
+    background-color: rgba(82, 245, 231, 0.397);
+}
+
+.signup-login .sign-up{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 5%;
+}
+
+.signup-login .sign-up .input-field{
+    display: block; 
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+}
+
+.signup-login .log-in{
+    display: none;
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    margin-top: 5%;
+}
+
+.signup-login .log-in .input-field{
+    display: block; 
+    padding: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+}
