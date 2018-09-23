@@ -1,3 +1,7 @@
+<?php
+    require 'core.php';
+    require 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>
-    
+    <?php
+        if(!loggedIn())
+            include 'login.php';
+    ?>
 </body>
 </html>

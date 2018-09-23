@@ -6,13 +6,21 @@ body{
     background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 0px;
     padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+input, select, textarea, button{
+    font-family: 'Raleway', sans-serif;
+    color: rgba(46, 46, 46, 0.856);
 }
 
 .signup-login{
     padding: 10px;
-    margin: auto;
+    /* margin: auto; */
     position: absolute;
     left: 35%;
     top: 15%;
@@ -42,12 +50,13 @@ body{
     text-align: center;
 }
 
-.signup-login .select-form span:hover{
-    background-color: rgba(82, 245, 231, 0.397);
+.signup-login .select-form span:hover, input[type = submit].input-field:hover{
+    /* background-color: rgba(29, 170, 170, 0.397); */
+    background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));
 }
 
 .signup-login .sign-up{
-    display: block;
+    display: none;
     width: 100%;
     margin: auto;
     padding: 0%;
@@ -66,7 +75,7 @@ body{
 }
 
 .signup-login .log-in{
-    display: none;
+    display: block;
     width: 100%;
     margin: auto;
     padding: 0%;
@@ -82,4 +91,248 @@ body{
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.842);
     border-style: none;
+}
+
+/*
+    Formatting for user page
+*/
+.side-pane-main{
+    width: 100%;
+    /*padding: 0%;
+    padding-top: 20%;*/
+    /*background-color: rgba(0, 255, 255, 0.61);*/
+    height: 100%;
+    position: absolute; 
+    float: left;
+}
+
+.side-pane-main ul.side-pane{
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.397);
+    color: rgba(56, 56, 56, 0.699);
+    border: 2px solid rgba(97, 244, 255, 0.705);
+    border-radius: 15px;
+    text-align: center; 
+    list-style-type: none;
+    display: block;
+    padding: 20px;
+    float: left;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.side-pane-main .side-pane li{
+    width: 90%;
+    height: 10%;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.397);
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.side-pane-main .side-pane li:hover{
+    background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));
+}
+
+.side-pane-main .side-pane a{
+    text-decoration: none;
+    color: rgba(56, 56, 56, 0.699);
+}
+
+/*
+Formatting for the message boxes
+*/
+
+.send-receive-main{
+    width: 100%;
+    height: 100%;
+}
+
+.send-receive-main .send-textarea, .send-receive-main .receive-textarea{
+    position: absolute;
+    width: 40%;
+    height: 58%; 
+    background-color: rgba(255, 255, 255, 0.452);
+    top: 15%;
+    left: 30%;
+    border-radius: 15px;
+    padding: 10px;
+    display: block;
+}
+
+/* .send-receive-main .send-textarea{
+    display: block;
+}
+
+.send-receive-main .receive-textarea{
+    display: none;
+} */
+
+.send-receive-main .send-textarea .input-field1, .send-receive-main .receive-textarea .input-field1{
+    display: block; 
+    position: relative;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 20px;
+    padding: 15px;
+}
+
+.send-receive-main .send-textarea .input-field2, .send-receive-main .receive-textarea .input-field2{
+    display: block; 
+    position: relative;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 70px;
+    padding: 15px;
+}
+
+.send-receive-main .send-textarea .input-field3, .send-receive-main .receive-textarea .input-field3{
+    display: block; 
+    position: relative;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 100px;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.send-receive-main .send-textarea .input-field, .send-receive-main .receive-textarea .input-field{
+    display: block; 
+    position: absolute;
+    left: 35%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 15%;
+    top: 110%;
+    border: 4px solid rgba(255, 255, 255, 0.452);;
+}
+
+.send-receive-main .home{
+    display: block; 
+    position: absolute;
+    left: 80%;
+    width: 10%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 10%;
+    top: 2%;
+    border: 4px solid rgba(255, 255, 255, 0.452);
+}
+
+.send-receive-main .home:hover, .send-receive-main .receive-textarea .input-field:hover{
+    background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));   
+}
+
+/*
+    Formatting for admin page
+*/
+
+.admin-main{
+    width: 100%;
+    height: 100%;
+}
+
+.admin-main .receive-textarea{
+    position: absolute;
+    width: 40%;
+    height: 58%; 
+    background-color: rgba(255, 255, 255, 0.452);
+    top: 15%;
+    left: 30%;
+    border-radius: 15px;
+    padding: 10px;
+    display: block;
+}
+
+.admin-main .receive-textarea .input-field1{
+    display: block; 
+    position: relative;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 20px;
+    padding: 15px;
+}
+
+.admin-main .receive-textarea .input-field2{
+    display: block; 
+    position: relative;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 70px;
+    padding: 15px;
+}
+
+.admin-main .receive-textarea .input-field3{
+    display: block; 
+    position: relative;
+    width: 94%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 100px;
+    padding: 15px;
+    overflow: scroll;
+}
+
+.admin-main .receive-textarea .button1, .admin-main .receive-textarea .button2, .admin-main .receive-textarea .button3{
+    display: block; 
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 15%;
+    top: 110%;
+    border: 4px solid rgba(255, 255, 255, 0.452);;
+}
+
+.admin-main .receive-textarea .button1{
+    left: 10%;
+    width: 20%;
+}
+
+.admin-main .receive-textarea .button2{
+    left: 40%;
+    width: 20%;
+}
+
+.admin-main .receive-textarea .button3{
+    left: 70%;
+    width: 20%;
+}
+
+.admin-main .receive-textarea .button1:hover, .admin-main .receive-textarea .button2:hover, .admin-main .receive-textarea .button3:hover{
+    background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));   
+}
+
+.admin-main .log-out{
+    display: block; 
+    position: absolute;
+    left: 80%;
+    width: 10%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-style: none;
+    height: 10%;
+    top: 2%;
+    border: 4px solid rgba(255, 255, 255, 0.452);
+}
+
+.admin-main .log-out:hover, .admin-main .receive-textarea .input-field:hover{
+    background: linear-gradient(to right, rgb(67, 255, 123), rgb(23, 240, 255));   
 }
