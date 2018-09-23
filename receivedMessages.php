@@ -48,11 +48,5 @@
             <a href = "receivedMessages.php"><button class = "input-field">Next Message</button></a>
         </div>
     </div>
-    <script>
-        function nextMessage(){
-            <?php   
-            ?>
-        }
-    </script>
 </body>
 </html>

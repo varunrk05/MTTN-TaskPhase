@@ -47,10 +47,10 @@
             mysqli_query($conn, $query_mark);   
         }
 
-        if(isset($_POST['delete'])){
+        /*if(isset($_POST['delete'])){
             $query_delete = "DELETE FROM Message WHERE where ID = '$messageID'";
             mysqli_query($conn, $query_delete);   
-        }
+        }*/
     ?>
     <div class = "admin-main">
         <a href = "logout.php"><button class = "log-out">Log Out</button></a>
